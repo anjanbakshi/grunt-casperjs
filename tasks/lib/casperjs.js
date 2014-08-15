@@ -23,7 +23,7 @@ exports.init = function(grunt) {
     grunt.log.write('\nRunning tests from "' + filepath + '":\n');
 
     grunt.util.spawn({
-      cmd: command,
+      cmd: 'casperjs',
       args: args,
       opts: {
         // pipe stdout/stderr through
